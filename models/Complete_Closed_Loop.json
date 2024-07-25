@@ -1,0 +1,627 @@
+{
+    "simulation_parameters": {
+        "number_of_cardiac_cycles": 10,
+        "number_of_time_pts_per_cardiac_cycle": 100,
+        "output_variable_based": true
+    },
+    "vessels": [
+        {
+            "vessel_id": 0,
+            "vessel_length": 10.0,
+            "vessel_name": "SVC",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 2.90,
+                "L": 0.0,
+                "R_poiseuille": 0.05
+            }
+        },  
+        {
+            "vessel_id": 1,
+            "vessel_length": 10.0,
+            "vessel_name": "IVC",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "L": 0.0,
+                "R_poiseuille": 0.025
+            }
+        },  
+        {
+            "vessel_id": 2,
+            "vessel_length": 10.0,
+            "vessel_name": "pul_trunk",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "L": 0.0,
+                "R_poiseuille": 0.01
+            }
+        },
+        {
+            "vessel_id": 3,
+            "vessel_length": 10.0,
+            "vessel_name": "LPA",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 2.0,
+                "L": 0.0,
+                "R_poiseuille": 0.02
+            }
+        },
+        {
+            "vessel_id": 4,
+            "vessel_length": 10.0,
+            "vessel_name": "RPA",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 2.0,
+                "L": 0.0,
+                "R_poiseuille": 0.02
+            }
+        },     
+        {
+            "vessel_id": 5,
+            "vessel_length": 10.0,
+            "vessel_name": "LPV",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "L": 0.0,
+                "R_poiseuille": 0.1
+            }
+        },
+        {
+            "vessel_id": 6,
+            "vessel_length": 10.0,
+            "vessel_name": "RPV",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "L": 0.0,
+                "R_poiseuille": 0.1
+            }
+        },
+        {
+            "vessel_id": 7,
+            "vessel_length": 10.0,
+            "vessel_name": "aorta",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "R_poiseuille": 0.0,
+                "L": 0.005
+            }
+        },
+        {
+            "vessel_id": 8,
+            "vessel_length": 10.0,
+            "vessel_name": "asc_aorta",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 4.3,
+                "R_poiseuille": 0.573,
+                "L": 0.005
+            }
+        },
+        {
+            "vessel_id": 9,
+            "vessel_length": 10.0,
+            "vessel_name": "desc_aorta",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "R_poiseuille": 0.068,
+                "L": 0.00133
+            }
+        },
+        {
+            "vessel_id": 10,
+            "vessel_length": 10.0,
+            "vessel_name": "th_aorta",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.21,
+                "R_poiseuille": 0.0,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 11,
+            "vessel_length": 10.0,
+            "vessel_name": "ab_aorta",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.21,
+                "R_poiseuille": 0.517,
+                "L": 0.00133
+            }
+        },
+        {
+            "vessel_id": 12,
+            "vessel_length": 10.0,
+            "vessel_name": "liver_artery",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 6.05,
+                "R_poiseuille": 7.154,
+                "L": 0.0001
+            }
+        },
+        {
+            "vessel_id": 13,
+            "vessel_length": 10.0,
+            "vessel_name": "kidney_artery",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 2.52,
+                "R_poiseuille": 5.093,
+                "L": 0.0001
+            }
+        },
+        {
+            "vessel_id": 14,
+            "vessel_length": 10.0,
+            "vessel_name": "liver_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0,
+                "R_poiseuille": 0.045,
+                "L": 0.0001
+            }
+        },
+        {
+            "vessel_id": 15,
+            "vessel_length": 10.0,
+            "vessel_name": "kidney_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0,
+                "R_poiseuille": 0.472,
+                "L": 0.0001
+            }
+        },
+        {
+            "vessel_id": 16,
+            "vessel_length": 10.0,
+            "vessel_name": "liver_kid_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 1.0,
+                "R_poiseuille": 0.0,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 17,
+            "vessel_length": 10.0,
+            "vessel_name": "intestine_artery",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 1.51,
+                "R_poiseuille": 11.048,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 18,
+            "vessel_length": 10.0,
+            "vessel_name": "leg_artery",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 6.05,
+                "R_poiseuille": 7.154,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 19,
+            "vessel_length": 10.0,
+            "vessel_name": "intestine_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "R_poiseuille": 0.201,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 20,
+            "vessel_length": 10.0,
+            "vessel_name": "leg_cap",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "R_poiseuille": 3.0,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 21,
+            "vessel_length": 10.0,
+            "vessel_name": "leg_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 10.0,
+                "R_poiseuille": 0.699,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 22,
+            "vessel_length": 10.0,
+            "vessel_name": "ab_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 9.0,
+                "R_poiseuille": 0.05,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 23,
+            "vessel_length": 10.0,
+            "vessel_name": "th_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 0.0,
+                "R_poiseuille": 0.025,
+                "L": 0.0
+            }
+        },
+        {
+            "vessel_id": 24,
+            "vessel_length": 10.0,
+            "vessel_name": "ub_artery",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 4.3,
+                "R_poiseuille": 0.573,
+                "L": 0.000548
+            }
+        },
+        {
+            "vessel_id": 25,
+            "vessel_length": 10.0,
+            "vessel_name": "ub_vein",
+            "zero_d_element_type": "BloodVessel",
+            "zero_d_element_values": {
+                "C": 10.0,
+                "R_poiseuille": 2.0,
+                "L": 0.0
+            }
+        }
+    ],
+    "junctions": [
+        {
+            "inlet_vessels": [
+                2
+            ],
+            "junction_name": "J0",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                3,
+                4
+            ]
+        },
+        {
+            "inlet_blocks": [
+                "SVC",
+                "IVC"
+            ],
+            "junction_name": "J1",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_blocks": [
+                "right_atrium"
+            ]
+        },        
+        {
+            "inlet_vessels": [
+                3
+            ],
+            "junction_name": "J2",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                5
+            ]
+        },
+        {
+            "inlet_vessels": [
+                4
+            ],
+            "junction_name": "J3",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                6
+            ]
+        },
+        {
+            "inlet_blocks": [
+                "LPV",
+                "RPV"
+            ],
+            "junction_name": "J4",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_blocks": [
+                "left_atrium"
+            ]
+        },
+        {
+            "inlet_vessels": [
+                7
+            ],
+            "junction_name": "J5",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                8,
+                9
+            ]
+        },
+        {
+            "inlet_vessels": [
+                9
+            ],
+            "junction_name": "J6",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                10,
+                11
+            ]
+        },
+        {
+            "inlet_vessels": [
+                10
+            ],
+            "junction_name": "J7",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                12,
+                13
+            ]
+        },
+        {
+            "inlet_vessels": [
+                12,
+                19
+            ],
+            "junction_name": "J8",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                14
+            ]
+        },
+        {
+            "inlet_vessels": [
+                13
+            ],
+            "junction_name": "J9",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                15
+            ]
+        },       
+        {
+            "inlet_vessels": [
+                14,
+                15
+            ],
+            "junction_name": "J10",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                16
+            ]
+        },       
+        {
+            "inlet_vessels": [
+                11
+            ],
+            "junction_name": "J11",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                17,
+                18
+            ]
+        },
+        {
+            "inlet_vessels": [
+                17
+            ],
+            "junction_name": "J12",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                19
+            ]
+        },
+        {
+            "inlet_vessels": [
+                18
+            ],
+            "junction_name": "J13",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                20
+            ]
+        },
+        {
+            "inlet_vessels": [
+                20
+            ],
+            "junction_name": "J14",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                21
+            ]
+        },
+        {
+            "inlet_vessels": [
+                21
+            ],
+            "junction_name": "J15",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                22
+            ]
+        },
+        {
+            "inlet_vessels": [
+                16,
+                22
+            ],
+            "junction_name": "J16",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                23
+            ]
+        },
+        {
+            "inlet_vessels": [
+                8
+            ],
+            "junction_name": "J17",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                24
+            ]
+        },
+        {
+            "inlet_vessels": [
+                24
+            ],
+            "junction_name": "J18",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                25
+            ]
+        },
+        {
+            "inlet_vessels": [
+                25
+            ],
+            "junction_name": "J19",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                0
+            ]
+        },
+        {
+            "inlet_vessels": [
+                23
+            ],
+            "junction_name": "J20",
+            "junction_type": "NORMAL_JUNCTION",
+            "outlet_vessels": [
+                1
+            ]
+        }
+    ],
+    "boundary_conditions": [
+    ],
+    "chambers": [
+        {
+            "type": "ChamberElastanceInductor",
+            "name": "right_atrium",
+            "values": {
+                "Emax": 0.06,
+                "Emin": 0.07,
+                "Vrd": 100.0,
+                "Vrs": 4.0,
+                "t_active": 0.064,
+                "t_twitch": 0.56,
+                "Impedance": 0.000351787
+            }
+        },
+        {
+            "type": "ChamberElastanceInductor",
+            "name": "right_ventricle",
+            "values": {
+                "Emax": 0.5,
+                "Emin": 0.05,
+                "Vrd": 130.0,
+                "Vrs": 75.0,
+                "t_active": 0.2,
+                "t_twitch": 0.47,
+                "Impedance": 0.0001
+            }
+        },
+        {
+            "type": "ChamberElastanceInductor",
+            "name": "left_atrium",
+            "values": {
+                "Emax": 0.07,
+                "Emin": 0.09,
+                "Vrd": 100.0,
+                "Vrs": 4.0,
+                "t_active": 0.2,
+                "t_twitch": 0.3,
+                "Impedance": 0.000351787
+            }
+        },
+        {
+            "_comment_": "Volume measurements based on Kimura et al. J Cardiogr (1983)",
+            "type": "ChamberElastanceInductor",
+            "name": "left_ventricle",
+            "values": {
+                "Emax": 2.3,
+                "Emin": 0.2,
+                "Vrd": 110,
+                "Vrs": 60,
+                "t_active": 0.20,
+                "t_twitch": 0.47,
+                "Impedance": 0.0001
+            }
+        }
+    ],
+    "valves": [
+        {
+            "type": "ValveTanh",
+            "name": "tricuspid",
+            "params": {
+                "Rmax": 75000.0,
+                "Rmin": 0.0075,
+                "Steepness": 100.0,
+                "upstream_block": "right_atrium",
+                "downstream_block": "right_ventricle"
+            }
+        },
+        {
+            "type": "ValveTanh",
+            "name": "pulmonary",
+            "params": {
+                "Rmax": 75000.0,
+                "Rmin": 0.0075,
+                "Steepness": 100.0,
+                "upstream_block": "right_ventricle",
+                "downstream_block": "pul_trunk"
+            }
+        },
+        {
+            "type": "ValveTanh",
+            "name": "mitral",
+            "params": {
+                "Rmax": 75000.0,
+                "Rmin": 0.0075,
+                "Steepness": 100.0,
+                "upstream_block": "left_atrium",
+                "downstream_block": "left_ventricle"
+            }
+        },
+        {
+            "type": "ValveTanh",
+            "name": "aortic",
+            "params": {
+                "Rmax": 75000.0,
+                "Rmin": 0.0075,
+                "Steepness": 100.0,
+                "upstream_block": "left_ventricle",
+                "downstream_block": "aorta"
+            }
+        }
+    ],
+    "initial_condition": {
+        "Vc:right_ventricle": 96.07,
+        "Vc:left_ventricle": 96.07,
+        "Vc:right_atrium": 30.53,
+        "Vc:left_atrium": 30.53,
+        "pressure_all": 15
+    }
+}

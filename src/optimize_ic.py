@@ -4,7 +4,7 @@ import subprocess
 from tempfile import TemporaryDirectory
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize, Bounds
-from zerodsolver import compared_PV_loops_simlated
+from model_comparer import compared_PV_loops_simlated
 
 import numpy as np
 import pandas as pd
